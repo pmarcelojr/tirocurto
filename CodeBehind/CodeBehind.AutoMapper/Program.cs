@@ -27,6 +27,8 @@ namespace CodeBehind.AutoMapper
             var entidade1 = MetodoTradicional(dto);
 
             var entidade2 = MetodoAutoMapper(dto);
+
+            var entidade3 = MetodoGenerico<Entidade>(dto);
         }
 
         private static Entidade MetodoTradicional(EntidadeDto dto)
@@ -44,6 +46,11 @@ namespace CodeBehind.AutoMapper
         private static Entidade MetodoAutoMapper(EntidadeDto dto)
         {
             return _mapper.Map<Entidade>(dto);
+        }
+
+        private static T MetodoGenerico<T>(object obj)
+        {
+            return _mapper.Map<T>(obj);
         }
     }
 }
