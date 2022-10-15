@@ -12,5 +12,7 @@ namespace CodeBehind.AutoMapper.Models
         public string Sobrenome { get; set; }
         public byte Idade { get; set; }
         public string Sexo { get; set; }
+        public string CPF { get; set; }
+        public double Salario { get; set; }
     }
 }
