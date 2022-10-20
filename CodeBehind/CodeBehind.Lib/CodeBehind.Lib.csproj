@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <generatepackageonbuild>true</generatepackageonbuild>
+    <Description>Meu pacote nuget</Description>
+    <Copyright>Copyright © 2022</Copyright>
+    <Version>1.0.1</Version>
+    <Authors>Marcelo Santos</Authors>
+  </PropertyGroup>
+
+</Project>
